@@ -6,12 +6,15 @@ var totalPrice = 10;
 var liCollection = document.getElementsByTagName("li");
 
 for ( let i = 0; i < liCollection.length; i++) {
-    var liSingle = liCollection [i];
+    const liSingle = liCollection [i];
+
+    liSingle.addEventListener('click', function() {
+        const liSon = (liSingle.children)[2];
+        console.log(liSingle.children);
+        liSon.checked = !liSon.checked;
+        console.log(liSon.checked);
+    });
 }
-
-liSingle.addEventListener('click', function() {
-
-});
 
 calculateBtn.addEventListener('click', function() {
 
