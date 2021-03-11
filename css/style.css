@@ -11,13 +11,12 @@
 
 .main-section {
     flex-basis: 70%;
-    background-color: red;
     height: calc(100vh - 100px);
 }
 
 .aside-section {
     flex-basis: 30%;
-    background-color: blue;
+    background-color: ivory;
     height: calc(100vh - 100px);
 }
 
@@ -44,12 +43,76 @@ header h2 {
 }
 
 main {
+    width: 100%;
     height: calc(100vh - 250px);
-    background-color: lightblue;
+    padding: 40px;
+}
+
+main h2 {
+    color: grey;
+}
+
+main h2, main h3 {
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+
+main ul , main ul li{
+    display: inline-block;
+}
+
+main ul li {
+    flex-basis: 50%;
+    margin: 20px 0;
+}
+
+main ul li:last-child {
+    flex-basis: 100%;
+}
+
+main ul li img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+main ul li input,
+main ul li span,
+main ul li label  {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+main ul li:last-child input {
+    width: 70%;
+}
+
+main div:last-child {
+    text-align: center;
+}
+
+#calculate {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color:  #EFBA54;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 footer {
     height: 100px;
-    background-color: rgb(248, 74, 219);
+    background-color: rgb(245, 53, 127);
     flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer h3,
+footer div span  {
+    font-size: 30px;
+    color: white;
 }
