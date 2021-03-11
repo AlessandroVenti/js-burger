@@ -48,6 +48,12 @@ main {
     padding: 40px;
 }
 
+main input:first-child {
+    border: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
 main h2 {
     color: grey;
 }
